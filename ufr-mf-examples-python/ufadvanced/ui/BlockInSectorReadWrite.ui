@@ -1,0 +1,1799 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BlockRWInSector</class>
+ <widget class="QDialog" name="BlockRWInSector">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>620</width>
+    <height>380</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QFrame" name="pnlAuth">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>620</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::WinPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QRadioButton" name="rbAUTH1A">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>10</y>
+      <width>99</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>AUTH 1A</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rbAUTH1B">
+    <property name="geometry">
+     <rect>
+      <x>113</x>
+      <y>10</y>
+      <width>99</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>AUTH 1B</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblKeyIndex">
+    <property name="geometry">
+     <rect>
+      <x>204</x>
+      <y>12</y>
+      <width>61</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Key Index</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cboKeyIndex">
+    <property name="geometry">
+     <rect>
+      <x>267</x>
+      <y>10</y>
+      <width>50</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="currentText" stdset="0">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblPKKeys">
+    <property name="geometry">
+     <rect>
+      <x>331</x>
+      <y>12</y>
+      <width>41</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>PK Key</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QTabWidget" name="tabBlockInSectorReadWrite">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>48</y>
+     <width>611</width>
+     <height>290</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tbBlockInSectorRead">
+    <attribute name="title">
+     <string>BlockInSector Read</string>
+    </attribute>
+    <widget class="QFrame" name="fmBlockInSectorRead">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>10</y>
+       <width>271</width>
+       <height>120</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="lblHeaderBSBR">
+      <property name="geometry">
+       <rect>
+        <x>2</x>
+        <y>2</y>
+        <width>270</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(209, 209, 209);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>BLOCK IN SECTOR  READ</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblBlockAddressBR">
+      <property name="geometry">
+       <rect>
+        <x>13</x>
+        <y>53</y>
+        <width>90</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Block Address</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtBlockInSAddressBR">
+      <property name="geometry">
+       <rect>
+        <x>105</x>
+        <y>53</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnBlockInSRead">
+      <property name="geometry">
+       <rect>
+        <x>164</x>
+        <y>31</y>
+        <width>91</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>READ</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblReadDataBR">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>73</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Read Data</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtReadInSDataBR">
+      <property name="geometry">
+       <rect>
+        <x>16</x>
+        <y>92</y>
+        <width>241</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtSectorAddressBR">
+      <property name="geometry">
+       <rect>
+        <x>105</x>
+        <y>30</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblSectorAddressBR">
+      <property name="geometry">
+       <rect>
+        <x>13</x>
+        <y>30</y>
+        <width>90</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Sector Address</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="fmBlockInSectorReadAKM1">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>10</y>
+       <width>271</width>
+       <height>120</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="lblHeaderBSBRAKM1">
+      <property name="geometry">
+       <rect>
+        <x>2</x>
+        <y>2</y>
+        <width>270</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(209, 209, 209);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>BLOCK IN SECTOR  READ AKM1</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblBlockAddressBRAKM1">
+      <property name="geometry">
+       <rect>
+        <x>13</x>
+        <y>53</y>
+        <width>90</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Block Address</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtBlockInSAddressBRAKM1">
+      <property name="geometry">
+       <rect>
+        <x>105</x>
+        <y>53</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnBlockInSReadAKM1">
+      <property name="geometry">
+       <rect>
+        <x>164</x>
+        <y>31</y>
+        <width>91</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>READ</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblReadDataBRAKM1">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>73</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Read Data</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtReadInSDataBRAKM1">
+      <property name="geometry">
+       <rect>
+        <x>16</x>
+        <y>92</y>
+        <width>241</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtSectorAddressBRAKM1">
+      <property name="geometry">
+       <rect>
+        <x>105</x>
+        <y>30</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblSectorAddressBRAKM1">
+      <property name="geometry">
+       <rect>
+        <x>13</x>
+        <y>30</y>
+        <width>90</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Sector Address</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="fmBlockInSectorReadAKM2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>271</width>
+       <height>120</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="lblHeaderBSBRAKM2">
+      <property name="geometry">
+       <rect>
+        <x>2</x>
+        <y>2</y>
+        <width>270</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(209, 209, 209);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>BLOCK IN SECTOR  READ AKM2</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblBlockAddressBRAKM2">
+      <property name="geometry">
+       <rect>
+        <x>13</x>
+        <y>53</y>
+        <width>90</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Block Address</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtBlockInSAddressBRAKM2">
+      <property name="geometry">
+       <rect>
+        <x>105</x>
+        <y>53</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnBlockInSReadAKM2">
+      <property name="geometry">
+       <rect>
+        <x>164</x>
+        <y>31</y>
+        <width>91</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>READ</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblReadDataBRAKM2">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>73</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Read Data</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtReadInSDataBRAKM2">
+      <property name="geometry">
+       <rect>
+        <x>16</x>
+        <y>92</y>
+        <width>241</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtSectorAddressBRAKM2">
+      <property name="geometry">
+       <rect>
+        <x>105</x>
+        <y>30</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblSectorAddressBRAKM2">
+      <property name="geometry">
+       <rect>
+        <x>13</x>
+        <y>30</y>
+        <width>90</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Sector Address</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="fmBlockInSectorReadPK">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>140</y>
+       <width>271</width>
+       <height>120</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="lblHeaderBSBRPK">
+      <property name="geometry">
+       <rect>
+        <x>2</x>
+        <y>2</y>
+        <width>270</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(209, 209, 209);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>BLOCK IN SECTOR  READ PK</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblBlockAddressBRPK">
+      <property name="geometry">
+       <rect>
+        <x>13</x>
+        <y>53</y>
+        <width>90</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Block Address</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtBlockInSAddressBRPK">
+      <property name="geometry">
+       <rect>
+        <x>105</x>
+        <y>53</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnBlockInSReadPK">
+      <property name="geometry">
+       <rect>
+        <x>164</x>
+        <y>31</y>
+        <width>91</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>READ</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblReadDataBRPK">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>73</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Read Data</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtReadInSDataBRPK">
+      <property name="geometry">
+       <rect>
+        <x>16</x>
+        <y>92</y>
+        <width>241</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtSectorAddressBRPK">
+      <property name="geometry">
+       <rect>
+        <x>105</x>
+        <y>30</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblSectorAddressBRPK">
+      <property name="geometry">
+       <rect>
+        <x>13</x>
+        <y>30</y>
+        <width>90</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Sector Address</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tbBlockWrite">
+    <attribute name="title">
+     <string>BlockInSector  Write</string>
+    </attribute>
+    <widget class="QFrame" name="fmBlockWrite">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>10</y>
+       <width>271</width>
+       <height>120</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="lblHeaderBW">
+      <property name="geometry">
+       <rect>
+        <x>2</x>
+        <y>2</y>
+        <width>270</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(209, 209, 209);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>BLOCK WRITE</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblBlockAddressBW">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>89</y>
+        <width>90</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Block Address</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtBlockInSAddressBW">
+      <property name="geometry">
+       <rect>
+        <x>102</x>
+        <y>89</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnBlockInSWrite">
+      <property name="geometry">
+       <rect>
+        <x>164</x>
+        <y>69</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>WRITE</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblWriteDataBW">
+      <property name="geometry">
+       <rect>
+        <x>9</x>
+        <y>21</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Write Data</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtWriteInSDataBW">
+      <property name="geometry">
+       <rect>
+        <x>11</x>
+        <y>39</y>
+        <width>240</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblSectorAddressBW">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>66</y>
+        <width>90</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Sector Address</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtSectorAddressBW">
+      <property name="geometry">
+       <rect>
+        <x>102</x>
+        <y>66</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="fmBlockWriteAKM1">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>10</y>
+       <width>271</width>
+       <height>120</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="lblHeaderBWAKM1">
+      <property name="geometry">
+       <rect>
+        <x>2</x>
+        <y>2</y>
+        <width>270</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(209, 209, 209);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>BLOCK WRITE AKM1</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblBlockAddressBWAKM1">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>89</y>
+        <width>90</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Block Address</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtBlockInSAddressBWAKM1">
+      <property name="geometry">
+       <rect>
+        <x>102</x>
+        <y>89</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnBlockInSWriteAKM1">
+      <property name="geometry">
+       <rect>
+        <x>164</x>
+        <y>69</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>WRITE</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblWriteDataBWAKM1">
+      <property name="geometry">
+       <rect>
+        <x>9</x>
+        <y>21</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Write Data</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtWriteInSDataBWAKM1">
+      <property name="geometry">
+       <rect>
+        <x>11</x>
+        <y>39</y>
+        <width>240</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblSectorAddressBWAKM1">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>66</y>
+        <width>90</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Sector Address</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtSectorAddressBWAKM1">
+      <property name="geometry">
+       <rect>
+        <x>102</x>
+        <y>66</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="fmBlockWriteAKM2">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>140</y>
+       <width>271</width>
+       <height>120</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="lblHeaderBWAKM2">
+      <property name="geometry">
+       <rect>
+        <x>2</x>
+        <y>2</y>
+        <width>270</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(209, 209, 209);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>BLOCK WRITE AKM2</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblBlockAddressBWAKM2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>89</y>
+        <width>90</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Block Address</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtBlockInSAddressBWAKM2">
+      <property name="geometry">
+       <rect>
+        <x>102</x>
+        <y>89</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnBlockInSWriteAKM2">
+      <property name="geometry">
+       <rect>
+        <x>164</x>
+        <y>69</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>WRITE</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblWriteDataBWAKM2">
+      <property name="geometry">
+       <rect>
+        <x>9</x>
+        <y>21</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Write Data</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtWriteInSDataBWAKM2">
+      <property name="geometry">
+       <rect>
+        <x>11</x>
+        <y>39</y>
+        <width>240</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblSectorAddressBWAKM2">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>66</y>
+        <width>90</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Sector Address</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtSectorAddressBWAKM2">
+      <property name="geometry">
+       <rect>
+        <x>102</x>
+        <y>66</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="fmBlockWritePK">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>140</y>
+       <width>271</width>
+       <height>120</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="lblHeaderBWPK">
+      <property name="geometry">
+       <rect>
+        <x>2</x>
+        <y>2</y>
+        <width>270</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(209, 209, 209);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>BLOCK WRITE AKM1</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblBlockAddressBWPK">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>89</y>
+        <width>90</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Block Address</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtBlockInSAddressBWPK">
+      <property name="geometry">
+       <rect>
+        <x>102</x>
+        <y>89</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnBlockInSWritePK">
+      <property name="geometry">
+       <rect>
+        <x>164</x>
+        <y>69</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>WRITE</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblWriteDataBWPK">
+      <property name="geometry">
+       <rect>
+        <x>9</x>
+        <y>21</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Write Data</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtWriteInSDataBWPK">
+      <property name="geometry">
+       <rect>
+        <x>11</x>
+        <y>39</y>
+        <width>240</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblSectorAddressBWPK">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>66</y>
+        <width>90</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Sector Address</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtSectorAddressBWPK">
+      <property name="geometry">
+       <rect>
+        <x>102</x>
+        <y>66</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="lblFnValue">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>341</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblFnExplain">
+   <property name="geometry">
+    <rect>
+     <x>201</x>
+     <y>341</y>
+     <width>420</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblFnError">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>341</y>
+     <width>110</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="text">
+    <string>Function Error :</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>txtSectorAddressBR</tabstop>
+  <tabstop>txtBlockInSAddressBR</tabstop>
+  <tabstop>btnBlockInSRead</tabstop>
+  <tabstop>txtSectorAddressBRAKM1</tabstop>
+  <tabstop>txtBlockInSAddressBRAKM1</tabstop>
+  <tabstop>btnBlockInSReadAKM1</tabstop>
+  <tabstop>txtSectorAddressBRAKM2</tabstop>
+  <tabstop>txtBlockInSAddressBRAKM2</tabstop>
+  <tabstop>btnBlockInSReadAKM2</tabstop>
+  <tabstop>txtSectorAddressBRPK</tabstop>
+  <tabstop>txtBlockInSAddressBRPK</tabstop>
+  <tabstop>btnBlockInSReadPK</tabstop>
+  <tabstop>txtWriteInSDataBW</tabstop>
+  <tabstop>txtSectorAddressBW</tabstop>
+  <tabstop>txtBlockInSAddressBW</tabstop>
+  <tabstop>btnBlockInSWrite</tabstop>
+  <tabstop>txtWriteInSDataBWAKM1</tabstop>
+  <tabstop>txtSectorAddressBWAKM1</tabstop>
+  <tabstop>txtBlockInSAddressBWAKM1</tabstop>
+  <tabstop>btnBlockInSWriteAKM1</tabstop>
+  <tabstop>txtWriteInSDataBWAKM2</tabstop>
+  <tabstop>txtSectorAddressBWAKM2</tabstop>
+  <tabstop>txtBlockInSAddressBWAKM2</tabstop>
+  <tabstop>btnBlockInSWriteAKM2</tabstop>
+  <tabstop>txtWriteInSDataBWPK</tabstop>
+  <tabstop>txtSectorAddressBWPK</tabstop>
+  <tabstop>txtBlockInSAddressBWPK</tabstop>
+  <tabstop>btnBlockInSWritePK</tabstop>
+  <tabstop>tabBlockInSectorReadWrite</tabstop>
+  <tabstop>rbAUTH1A</tabstop>
+  <tabstop>rbAUTH1B</tabstop>
+  <tabstop>cboKeyIndex</tabstop>
+  <tabstop>txtReadInSDataBR</tabstop>
+  <tabstop>txtReadInSDataBRAKM1</tabstop>
+  <tabstop>txtReadInSDataBRAKM2</tabstop>
+  <tabstop>txtReadInSDataBRPK</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

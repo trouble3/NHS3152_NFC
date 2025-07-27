@@ -1,0 +1,1903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ValueBlockInSectorIncrDecr</class>
+ <widget class="QDialog" name="ValueBlockInSectorIncrDecr">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>620</width>
+    <height>380</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QFrame" name="pnlAuth">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>620</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::WinPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QRadioButton" name="rbAUTH1A">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>10</y>
+      <width>99</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>AUTH 1A</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rbAUTH1B">
+    <property name="geometry">
+     <rect>
+      <x>113</x>
+      <y>10</y>
+      <width>99</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>AUTH 1B</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblKeyIndex">
+    <property name="geometry">
+     <rect>
+      <x>204</x>
+      <y>12</y>
+      <width>61</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Key Index</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cboKeyIndex">
+    <property name="geometry">
+     <rect>
+      <x>267</x>
+      <y>10</y>
+      <width>50</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="currentText" stdset="0">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblPKKeys">
+    <property name="geometry">
+     <rect>
+      <x>331</x>
+      <y>12</y>
+      <width>41</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>PK Key</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QTabWidget" name="tabValueBlockInSIncrDecr">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>47</y>
+     <width>600</width>
+     <height>290</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tbValueBlockInSIncr">
+    <attribute name="title">
+     <string>ValueBlockInSector Increment</string>
+    </attribute>
+    <widget class="QFrame" name="fmValueBlockIncr">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>281</width>
+       <height>120</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="lblHeaderVBISIncr">
+      <property name="geometry">
+       <rect>
+        <x>2</x>
+        <y>2</y>
+        <width>280</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>8</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(209, 209, 209);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>VALUE BLOCK IN SECTOR INCREMENT</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblBlockAddress">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>89</y>
+        <width>90</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Block Address</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtBlockAddressIncr">
+      <property name="geometry">
+       <rect>
+        <x>125</x>
+        <y>81</y>
+        <width>51</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnIncrementValue">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>50</y>
+        <width>91</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>INCREMENT</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblIncrementValue">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>30</y>
+        <width>110</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Increment Value</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtIncrementValue">
+      <property name="geometry">
+       <rect>
+        <x>125</x>
+        <y>28</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblSectorAddressIncr">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>58</y>
+        <width>90</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Sector Address</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtSectorAddressIncr">
+      <property name="geometry">
+       <rect>
+        <x>125</x>
+        <y>50</y>
+        <width>51</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="fmValueBlockIncrAKM1">
+     <property name="geometry">
+      <rect>
+       <x>306</x>
+       <y>10</y>
+       <width>281</width>
+       <height>120</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="lblHeaderVBISIncrAKM1">
+      <property name="geometry">
+       <rect>
+        <x>2</x>
+        <y>2</y>
+        <width>280</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>8</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(209, 209, 209);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>VALUE BLOCK IN SECTOR INCREMENT AKM1</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblBlockAddressAKM1">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>89</y>
+        <width>90</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Block Address</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtBlockAddressIncrAKM1">
+      <property name="geometry">
+       <rect>
+        <x>125</x>
+        <y>81</y>
+        <width>51</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnIncrementValueAKM1">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>50</y>
+        <width>91</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>INCREMENT</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblIncrementValueAKM1">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>30</y>
+        <width>110</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Increment Value</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtIncrementValueAKM1">
+      <property name="geometry">
+       <rect>
+        <x>125</x>
+        <y>28</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblSectorAddressIncrAKM1">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>58</y>
+        <width>90</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Sector Address</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtSectorAddressIncrAKM1">
+      <property name="geometry">
+       <rect>
+        <x>125</x>
+        <y>50</y>
+        <width>51</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="fmValueBlockIncrAKM2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>134</y>
+       <width>281</width>
+       <height>120</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="lblHeaderVBISIncrAKM2">
+      <property name="geometry">
+       <rect>
+        <x>2</x>
+        <y>2</y>
+        <width>280</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>8</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(209, 209, 209);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>VALUE BLOCK IN SECTOR INCREMENT AKM2</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblBlockAddressAKM2">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>89</y>
+        <width>90</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Block Address</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtBlockAddressIncrAKM2">
+      <property name="geometry">
+       <rect>
+        <x>125</x>
+        <y>81</y>
+        <width>51</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnIncrementValueAKM2">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>50</y>
+        <width>91</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>INCREMENT</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblIncrementValueAKM2">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>30</y>
+        <width>110</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Increment Value</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtIncrementValueAKM2">
+      <property name="geometry">
+       <rect>
+        <x>125</x>
+        <y>28</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblSectorAddressIncrAKM2">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>58</y>
+        <width>90</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Sector Address</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtSectorAddressIncrAKM2">
+      <property name="geometry">
+       <rect>
+        <x>125</x>
+        <y>50</y>
+        <width>51</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="fmValueBlockIncrPK">
+     <property name="geometry">
+      <rect>
+       <x>306</x>
+       <y>134</y>
+       <width>281</width>
+       <height>120</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="lblHeaderVBISIncrPK">
+      <property name="geometry">
+       <rect>
+        <x>2</x>
+        <y>2</y>
+        <width>280</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>8</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(209, 209, 209);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>VALUE BLOCK IN SECTOR INCREMENT PK</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblBlockAddressPK">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>89</y>
+        <width>90</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Block Address</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtBlockAddressIncrPK">
+      <property name="geometry">
+       <rect>
+        <x>125</x>
+        <y>81</y>
+        <width>51</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnIncrementValuePK">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>50</y>
+        <width>91</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>INCREMENT</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblIncrementValuePK">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>30</y>
+        <width>110</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Increment Value</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtIncrementValuePK">
+      <property name="geometry">
+       <rect>
+        <x>125</x>
+        <y>28</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblSectorAddressIncrPK">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>58</y>
+        <width>90</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Sector Address</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtSectorAddressIncrPK">
+      <property name="geometry">
+       <rect>
+        <x>125</x>
+        <y>50</y>
+        <width>51</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tbValueBlockInSDecr">
+    <attribute name="title">
+     <string>ValueBlockInSector Decrement</string>
+    </attribute>
+    <widget class="QFrame" name="fmValueBlockDecr">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>281</width>
+       <height>120</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="lblHeaderVBISDecr">
+      <property name="geometry">
+       <rect>
+        <x>2</x>
+        <y>2</y>
+        <width>280</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>8</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(209, 209, 209);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>VALUE BLOCK IN SECTOR DECREMENT</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblBlockAddressDecr">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>89</y>
+        <width>90</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Block Address</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtBlockAddressDecr">
+      <property name="geometry">
+       <rect>
+        <x>125</x>
+        <y>81</y>
+        <width>51</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnDecrementValue">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>50</y>
+        <width>91</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>DECREMENT</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblDecrementValue">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>30</y>
+        <width>110</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Decrement Value</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtDecrementValue">
+      <property name="geometry">
+       <rect>
+        <x>125</x>
+        <y>28</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblSectorAddressDecr">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>58</y>
+        <width>90</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Sector Address</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtSectorAddressDecr">
+      <property name="geometry">
+       <rect>
+        <x>125</x>
+        <y>50</y>
+        <width>51</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="fmValueBlockDecrAKM1">
+     <property name="geometry">
+      <rect>
+       <x>306</x>
+       <y>10</y>
+       <width>281</width>
+       <height>120</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="lblHeaderVBISDecrAKM1">
+      <property name="geometry">
+       <rect>
+        <x>2</x>
+        <y>2</y>
+        <width>280</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>8</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(209, 209, 209);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>VALUE BLOCK IN SECTOR DECREMENT AKM1</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblBlockAddressDecrAKM1">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>89</y>
+        <width>90</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Block Address</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtBlockAddressDecrAKM1">
+      <property name="geometry">
+       <rect>
+        <x>125</x>
+        <y>81</y>
+        <width>51</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnDecrementValueAKM1">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>50</y>
+        <width>91</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>DECREMENT</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblDecrementValueAKM1">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>30</y>
+        <width>110</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Decrement Value</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtDecrementValueAKM1">
+      <property name="geometry">
+       <rect>
+        <x>125</x>
+        <y>28</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblSectorAddressDecrAKM1">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>58</y>
+        <width>90</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Sector Address</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtSectorAddressDecrAKM1">
+      <property name="geometry">
+       <rect>
+        <x>125</x>
+        <y>50</y>
+        <width>51</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="fmValueBlockDecrAKM2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>134</y>
+       <width>281</width>
+       <height>120</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="lblHeaderVBISDecrAKM2">
+      <property name="geometry">
+       <rect>
+        <x>2</x>
+        <y>2</y>
+        <width>280</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>8</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(209, 209, 209);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>VALUE BLOCK IN SECTOR DECREMENT AKM2</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblBlockAddressDecrAKM2">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>89</y>
+        <width>90</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Block Address</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtBlockAddressDecrAKM2">
+      <property name="geometry">
+       <rect>
+        <x>125</x>
+        <y>81</y>
+        <width>51</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnDecrementValueAKM2">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>50</y>
+        <width>91</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>DECREMENT</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblDecrementValueAKM2">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>30</y>
+        <width>110</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Decrement Value</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtDecrementValueAKM2">
+      <property name="geometry">
+       <rect>
+        <x>125</x>
+        <y>28</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblSectorAddressDecrAKM2">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>58</y>
+        <width>90</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Sector Address</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtSectorAddressDecrAKM2">
+      <property name="geometry">
+       <rect>
+        <x>125</x>
+        <y>50</y>
+        <width>51</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="fmValueBlockDecrPK">
+     <property name="geometry">
+      <rect>
+       <x>306</x>
+       <y>134</y>
+       <width>281</width>
+       <height>120</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="lblHeaderVBISDecrPK">
+      <property name="geometry">
+       <rect>
+        <x>2</x>
+        <y>2</y>
+        <width>280</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>8</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(209, 209, 209);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>VALUE BLOCK IN SECTOR DECREMENT PK</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblBlockAddressDecrPK">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>89</y>
+        <width>90</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Block Address</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtBlockAddressDecrPK">
+      <property name="geometry">
+       <rect>
+        <x>125</x>
+        <y>81</y>
+        <width>51</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnDecrementValuePK">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>50</y>
+        <width>91</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>DECREMENT</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblDecrementValuePK">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>30</y>
+        <width>110</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Decrement Value</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtDecrementValuePK">
+      <property name="geometry">
+       <rect>
+        <x>125</x>
+        <y>28</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblSectorAddressDecrPK">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>58</y>
+        <width>90</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Sector Address</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtSectorAddressDecrPK">
+      <property name="geometry">
+       <rect>
+        <x>125</x>
+        <y>50</y>
+        <width>51</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="lblFnValue">
+   <property name="geometry">
+    <rect>
+     <x>115</x>
+     <y>343</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblFnError">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>343</y>
+     <width>110</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="text">
+    <string>Function Error :</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblFnExplain">
+   <property name="geometry">
+    <rect>
+     <x>196</x>
+     <y>343</y>
+     <width>411</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>tabValueBlockInSIncrDecr</tabstop>
+  <tabstop>txtIncrementValue</tabstop>
+  <tabstop>txtSectorAddressIncr</tabstop>
+  <tabstop>txtBlockAddressIncr</tabstop>
+  <tabstop>btnIncrementValue</tabstop>
+  <tabstop>txtIncrementValueAKM1</tabstop>
+  <tabstop>txtSectorAddressIncrAKM1</tabstop>
+  <tabstop>txtBlockAddressIncrAKM1</tabstop>
+  <tabstop>btnIncrementValueAKM1</tabstop>
+  <tabstop>txtIncrementValueAKM2</tabstop>
+  <tabstop>txtSectorAddressIncrAKM2</tabstop>
+  <tabstop>txtBlockAddressIncrAKM2</tabstop>
+  <tabstop>btnIncrementValueAKM2</tabstop>
+  <tabstop>txtIncrementValuePK</tabstop>
+  <tabstop>txtSectorAddressIncrPK</tabstop>
+  <tabstop>btnIncrementValuePK</tabstop>
+  <tabstop>txtDecrementValue</tabstop>
+  <tabstop>txtSectorAddressDecr</tabstop>
+  <tabstop>txtBlockAddressDecr</tabstop>
+  <tabstop>btnDecrementValue</tabstop>
+  <tabstop>txtDecrementValueAKM1</tabstop>
+  <tabstop>txtSectorAddressDecrAKM1</tabstop>
+  <tabstop>txtBlockAddressDecrAKM1</tabstop>
+  <tabstop>btnDecrementValueAKM1</tabstop>
+  <tabstop>txtDecrementValueAKM2</tabstop>
+  <tabstop>txtSectorAddressDecrAKM2</tabstop>
+  <tabstop>txtBlockAddressDecrAKM2</tabstop>
+  <tabstop>btnDecrementValueAKM2</tabstop>
+  <tabstop>txtDecrementValuePK</tabstop>
+  <tabstop>txtSectorAddressDecrPK</tabstop>
+  <tabstop>txtBlockAddressDecrPK</tabstop>
+  <tabstop>btnDecrementValuePK</tabstop>
+  <tabstop>rbAUTH1A</tabstop>
+  <tabstop>rbAUTH1B</tabstop>
+  <tabstop>cboKeyIndex</tabstop>
+  <tabstop>txtBlockAddressIncrPK</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
